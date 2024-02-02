@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "rpn"
+
+rpn  = RPN::Calculator.new
+repl = RPN::REPL.new(evaluator: rpn)
+
+repl.start
